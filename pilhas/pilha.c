@@ -18,6 +18,8 @@ bool stack_isempty(pilha p){
 stack_info top(pilha p){
     return p.itens[p.topo-1];
 }
+
+//Ex 6
 pilha pilha_ordenar(pilha p){
     pilha ordenada;
     stack_init(&ordenada); 
@@ -29,6 +31,24 @@ pilha pilha_ordenar(pilha p){
     }
 }
 
+//Ex 7
 void pilha_remover_ocorrencias(pilha *p, stack_info info){
-    
+    pilha temp;
+    stack_init(&temp);
+    while(!stack_isempty(*p)){
+        stack_info item = pop(p);
+        if(item != info){
+            push(&temp, item);
+        }
+    }    
+}
+
+//Ex 8
+void pilha_rotacionar(pilha *p, int n){
+    int i;
+    pilha temp;
+    stack_init(&temp);
+    for(i = 0; i < n && !stack_isempty(*p); i++){
+        push(&temp, pop(p));
+    }
 }
