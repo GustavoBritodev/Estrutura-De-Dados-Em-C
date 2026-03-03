@@ -30,5 +30,13 @@ pilha pilha_ordenar(pilha p){
 }
 
 void pilha_remover_ocorrencias(pilha *p, stack_info info){
-    
+    pilha temp;
+    stack_init(&temp);
+    while(!stack_isempty(*p)){
+        stack_info item = pop(p);
+        if(item != info){
+            push(&temp, item);
+        }
+    }    
 }
+
