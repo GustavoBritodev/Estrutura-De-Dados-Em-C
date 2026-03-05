@@ -64,4 +64,3 @@ void pilha_fundir(pilha *p1, pilha *p2){
         push(&temp, pop(p2));
     }
 }
-
