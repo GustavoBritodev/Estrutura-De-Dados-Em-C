@@ -52,3 +52,16 @@ void pilha_rotacionar(pilha *p, int n){
         push(&temp, pop(p));
     }
 }
+
+//EX 4
+void pilha_fundir(pilha *p1, pilha *p2){
+    pilha temp;
+    stack_init(&temp);
+    while(!stack_isempty(*p1)){
+        push(&temp, pop(p1));
+    }
+    while(!stack_isempty(*p2)){
+        push(&temp, pop(p2));
+    }
+}
+
