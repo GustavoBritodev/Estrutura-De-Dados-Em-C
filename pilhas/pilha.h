@@ -19,4 +19,5 @@ stack_info top(pilha p);
 pilha pilha_ordenar(pilha p);
 void pilha_remover_ocorrencias(pilha *, stack_info);
 void pilha_rotacionar(pilha *p, int n);
+void pilha_fundir(pilha *p1, pilha *p2);
 #endif // _PILHA_H
