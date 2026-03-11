@@ -20,4 +20,5 @@ pilha pilha_ordenar(pilha p);
 void pilha_remover_ocorrencias(pilha *, stack_info);
 void pilha_rotacionar(pilha *p, int n);
 void pilha_fundir(pilha *p1, pilha *p2);
+void pilha_avaliar_expressao_infixa();
 #endif // _PILHA_H
