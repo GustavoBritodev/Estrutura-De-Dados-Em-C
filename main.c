@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "pilha.h"
 #include "fila.h"
+#include "lista.h"
 
 bool delimitadores_casam(char c1, char c2){
     return
